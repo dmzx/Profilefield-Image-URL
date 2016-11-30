@@ -1,0 +1,12 @@
+services:
+    dmzx.profilefield.listener:
+        class: dmzx\profilefield\event\main_listener
+        arguments:
+            - '@dmzx.profilefield.profilefield'
+            - '@template'
+        tags:
+            - { name: event.listener }
+    dmzx.profilefield.profilefield:
+        class: dmzx\profilefield\core\profilefield
+        arguments:
+            - '@profilefields.manager'
