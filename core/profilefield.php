@@ -9,8 +9,6 @@
 
 namespace dmzx\profilefield\core;
 
-use Symfony\Component\DependencyInjection\Container;
-
 class profilefield
 {
 	/** @var \phpbb\profilefields\manager */
